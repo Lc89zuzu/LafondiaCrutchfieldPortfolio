@@ -13,15 +13,15 @@ body::-webkit-scrollbar{
     width: 0.25rem
 }
 body::-webkit-scrollbar-track{
-    background: #2c3e50
+    background: purple
 }  
 body::-webkit-scrollbar-thumb{
     background: var(--primary);
 }      
 :root {
 /* Colors */
---bg-color: lightblue;
---primary: #01a29c;
+--bg-color: lightyellow;
+--primary: red;
 --hover: #008170;
 
 /* Fonts */
@@ -34,8 +34,8 @@ body::-webkit-scrollbar-thumb{
 --m-4: 2rem;
 }
 html {
-    background: #1c28;
-    color: blue;
+    background: rgb(166, 255, 0);
+    color: black;
 }
 /* Change location of main head text from top margain on the page */
 section {
@@ -44,13 +44,14 @@ section {
 header {
     position: fixed;
     width: 100%;
+    height: 100px;
     top: 0;
     right: 0;
     z-index: 1000;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    background: var(--bg-color);
+    background-color: lightblue;
     padding: 18px 100px;
     box-shadow: 0 0.5rem 50rem rgba(0, 0, 0, 0.1);
 }
@@ -66,12 +67,12 @@ header {
 .navbar a {
     font-size: 1rem;
     padding: 10px 20px;
-    color: #222435;
+    color: blue;
     font-weight: 500;  
 }
 header .navbar a:hover {
-    background: var(--primary);
-    color: blue;
+    background: darkolivegreen;
+    color: white;
 }
 #menu-icon {
     font-size: 2rem;
@@ -92,14 +93,13 @@ header .navbar a:hover {
     font-weight: 600; 
 } */
 span{
-    color: red
+    color: black;
 }
 /* Home*/
 .home{
 position: relative;
 width: 100%;
 min-height: 100vh;
-color: red;
 display: flex;
 align-items: center;
 background-color: var(--bg-color);
@@ -326,10 +326,7 @@ hr {
     backface-visibility: hidden;
     
 }
-header{
-    background-color: #444;
-    height: 100px;
-}
+
 header img{
     width: 80px;
     height: 80px;
@@ -641,7 +638,7 @@ header .navbar{
      border-left: 4px solid #222435; 
  } 
  .home{
-     background: #e7eafb;
+     background: #fff;
      justify-content: center;
  }
  .home-text {
