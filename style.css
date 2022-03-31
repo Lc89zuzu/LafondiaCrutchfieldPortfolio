@@ -35,7 +35,7 @@ body::-webkit-scrollbar-thumb{
 }
 html {
     background: #1c28;
-    color: lightyellow;
+    color: blue;
 }
 /* Change location of main head text from top margain on the page */
 section {
@@ -58,7 +58,7 @@ header {
     text-transform: uppercase;
     font-size: 1.4rem;
     font-weight: 600;
-    color: var(--primary);
+    color: blue;
 }
 .navbar{
     display: flex;
@@ -71,19 +71,35 @@ header {
 }
 header .navbar a:hover {
     background: var(--primary);
-    color: #fff;
+    color: blue;
 }
 #menu-icon {
     font-size: 2rem;
     cursor: pointer;
     display: none;
 }
+ /* /.container{
+    width: 100%;
+    height: 100vh;
+    background: #2b323c
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+}  */
+/* .container h2{
+    font-size: 80px;
+    font-weight: 600; 
+} */
+span{
+    color: red
+}
 /* Home*/
 .home{
 position: relative;
 width: 100%;
 min-height: 100vh;
-/*color: #222435;*/
+color: red;
 display: flex;
 align-items: center;
 background-color: var(--bg-color);
@@ -96,14 +112,14 @@ background-position: right center ;
     max-width: 500px;
 }
 .home-text h1 {
-    font-size:  var(--h1-font);
+    font-size:  37px;
     letter-spacing: var(--spacing);
 }
 .home-text span {
     color: var(--primary);
 }
 .home-text h2 {
-    font-size: var(--h2-font);
+    font-size: 37px;
     margin: var(--m-1) 0;
     letter-spacing: var(--spacing);
 }
@@ -111,7 +127,7 @@ background-position: right center ;
     font-size: var(--p-font);
     margin-bottom: var(--m-4);;
     line-height: 22px;
-    max-width: 71%;
+    max-width: 87%;
 }
 .btn {
     padding: 10px 22px;
@@ -171,7 +187,8 @@ body {
 
 
 /* Change the placement of the word skills */
-label {
+
+/* label {
    display: block;
    position: absolute;
    margin-top: 18%;
@@ -276,7 +293,87 @@ hr {
 	line-height: 30px;
 	text-align: center;
 	margin: 0 auto;
-} 
+}  */ */
+*{
+    -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+    box-sizing: border-box; 
+    }
+.card{
+    background-color: #EEE ; 
+    box-shadow: 2px 2px;
+    width: 300px;
+    height: 400px;
+    position: relative;
+    border-radius: 20px;
+    font-family: monospace;
+    transform-style: preserve-3d;
+    transition: all 2s ease-in-out;
+    left: 45vw;
+    bottom: 25vw
+}
+.card:hover{
+    transform: rotateY(180deg)
+}
+.card > div {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+}
+.front{
+    z-index: 2;
+    backface-visibility: hidden;
+    
+}
+header{
+    background-color: #444;
+    height: 100px;
+}
+header img{
+    width: 80px;
+    height: 80px;
+    border-radius: 100%;
+    margin: 10px 0px 20px 0px;
+}
+.front h2{
+    margin-top: 150px;
+}
+.front p{
+    font-family: serif;
+    font-weight: bold;
+    width: 85%;
+    margin: auto;
+}
+.front span{
+    display: inline-block;
+    margin-top: 30px;
+    font-size: 20px;
+    font-weight: bold;
+    color: darkslateblue;
+    text-decoration: underline;
+}
+.back{
+    z-index: 1; 
+    text-align: left;
+    font-family: sans-serif;
+    font-weight: bold;
+    border-radius: 20px;
+    background-color: #8080802e;
+    color: darkblue;
+    box-shadow: 2px 2px 10px 20px #777 inset;
+    transform: rotateY(180deg);
+    backface-visibility: hidden;
+}
+ul{
+    padding-top: 50px;
+    list-style-type: disc;
+    text-align: left;
+    }
+ul li{
+    margin-bottom: 30px;
+}
+
 .skills{
     width: 100%;
     min-height: 100vh;

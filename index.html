@@ -9,11 +9,14 @@
     <link rel="stylesheet" href="style.css">
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <!-- Link to CSS Flip Card -->
+    <link rel="stylesheet" href="normalize.css">
+    <link rel="stylesheet" href="newstyle.css">
 </head>
 <body>
     <!-- Navbar -->
     <header>
-        <a href="#home" class="logo">Miley</a>
+        <a href="#home" class="logo">Lafondia Crutchfield</a>
         <div id="menu-icon" class="fas fa-bars"></div>
 
         <ul class="navbar">
@@ -26,45 +29,69 @@
     </header>
 
     <!-- Home -->
+      <!-- <div class="container">
+        <h1>I'm <span class="auto-type"></span></h1>
+    </div> -->
+    
     <section class="home" id="home">
         <div class="home-text">
-            <h1>Hi, I'm <span>Miley Cyrus</span></h1>
-            <h2>Freelance Web Developer</h2>
+            <h1>Hi, I'm Lafondia Crutchfield</h1>
+             <div class="container"> 
+                <h2>I'm <span class="auto-type"></span></h2>
+            </div>
+            <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script> 
+            <script>
+                let articleChanger = (strings) => {
+                    return strings.map(string => {
+                        return /^(a|e|i|o|u)/gmi.test(string) ? `An ${string}`: `A ${string}`;
+                    });
+                }
+                let typed = new Typed(".auto-type", {
+                    strings: articleChanger(["Creative", "Motivator", "Innovator", "Web Developer"]),
+                    typeSpeed: 150,
+                    typeSpeed: 150,
+                    loop: true
+                })
+         
+             </script> 
+            
+             <!-- <h2>I'm</h2>  -->
             <p>Lorem ipsum dolor sit amet consectetur elit. And Dolorem natus repellat ipsum voluptatibus. Iusto, atque.</p>
             <a href="#" class="btn">Contact Me</a>
         </div>
     </section>
-    
+     
     <!-- About -->
     <section class="about" id="about">
         <div class="about-img">
-            <img src="images/about.png" alt="">
+            <!-- <img src="images/about.png" alt=""> -->
         </div>
         <div class="about-text">
             <h2>About Us</h2>
             <div class="about-img"><label>
                 <input type="checkbox" />
-                <div class="flip-card">
-                    <div class="front">
-                        <img src="" alt="" />
-                        <h1>LafondiaCrutchfield</h1>
-                        <h2>Web Developer</h2>
-                        <b>LafondiaCrutchfield@gmail.com</b>
-                        <p>Click to flip</p>
-                    </div>
-                    <div class="back">
-                        <h1>About me</h1>
-                        <hr />
-                        <p>My transition is great! the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since forever.</p>
-                        <hr />
-                        <p class="click">Click to flip</p>
-                    </div>
-            </div>
-            </label>
-            <h1>Miley Cyrus</h1>
+            <h1>Lafondia Crutchfield</h1>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam placeat velit quis optio praesentium distinctio reprehenderit excepturi error, facere, aliquid voluptatem! Nemo necessitatibus, quae error quibusdam sunt voluptatibus, iure atque quas quo nostrum libero nam.</p>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam placeat velit quis optio praesentium distinctio reprehenderit excepturi error, facere, aliquid voluptatem! Nemo necessitatibus, quae error quibusdam sunt voluptatibus, iure atque quas quo nostrum libero nam.</p>
             <a href="#" class="btn">Download Cv</a>
+        </div>
+        <div class="card">
+            <div class="front">       
+                <header>
+                    <img src="https://www.freevector.com/uploads/vector/preview/12675/FreeVector-Man-Vector-Avatar.jpg">
+                </header>
+                <h2>Lafondia Crutchfield</h2>
+                <p>I'm Loay the creator of this flap card, I hope you like it, It took me 15 mins to do it, For more info about me  hover the card</p>
+                <span>Hover Here</span>
+            </div>
+            <div class="back">
+                <ul>
+                    <li>Date Of Birth: 10 sep 1995</li>
+                    <li>City: Tanta</li>
+                    <li>Work: Engineer</li>
+                    <li>Hobby: Soccer</li>    
+                </ul>
+            </div>
         </div>
     </section>
 
@@ -96,11 +123,11 @@
                     <span>65%</span>
                     <div class="percent-bar js-bar"></div>
                 </div>
-                <div class="skills-box">
+                <!-- <div class="skills-box">
                     <i class="fas fa-palette"><h3>UI/UX</h3></i>
                     <span>80%</span>
                     <div class="percent-bar ux-bar"></div>
-                </div>
+                </div> -->
             </div>
             <div class="skills-img">
                 <img src="images/skills.jpg" alt="">
@@ -154,15 +181,15 @@
             <div class="contact-info">
                 <div class="info-box">
                     <i class="fas fa-phone-alt"></i>
-                    <p>+1 444 444 4444</p>
+                    <p>+1 504-493-8362</p>
                 </div>
                 <div class="info-box">
                     <i class="fas fa-envelope-open"></i>
-                    <p>example@email.com</p>
+                    <p>lc89zuzu@gmail.com</p>
                 </div>
                 <div class="info-box">
                     <i class="fas fa-map-marker-alt"></i>
-                    <p>44 Street NYC, USA</p>
+                    <p>4737 Bancroft Drive New Orleans, LA 70122 </p>
                 </div>
                 <div class="info-box social">
                     <a href="#"><i class="fab fa-facebook"></i></a>
@@ -186,10 +213,25 @@
 
     <!-- Copyright -->
     <div class="copyright">
-        <p>&#169; CarpoolVenom ♥ All Right Reserved</p>
+        <p>&#169; GP Reasons ♥ All Right Reserved</p>
     </div>
     
     <!-- Link To JS -->
+    <!-- <div class="container">
+        <h1>I'm <span class="auto-type"></span></h1>
+    </div> -->
+    
+
+    <!-- <script>
+       var typed = new Typed(".auto-type", {
+           strings: ["Creative", "Motivated", "Innovator", "Web Developer"],
+           typeSpeed: 150,
+           typeSpeed: 150,
+           loop: true
+       })
+
+    </script> -->
+    <!-- <script src="httpvs://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>  --> -->
     <script src="main.js"></script>
 </body>
 </html>
