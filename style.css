@@ -26,7 +26,7 @@ body::-webkit-scrollbar-thumb{
 
 /* Fonts */
 --h1-font: 2.2rem;
---h2-font: 1.1rem;
+--h2-font: 2.1rem;
 --p-font: 0.9rem;
 --spacing: 1px;
 /* Margins */
@@ -35,7 +35,7 @@ body::-webkit-scrollbar-thumb{
 }
 html {
     background: rgb(166, 255, 0);
-    color: black;
+    color: blue;
 }
 /* Change location of main head text from top margain on the page */
 section {
@@ -103,8 +103,9 @@ min-height: 100vh;
 display: flex;
 align-items: center;
 background-color: var(--bg-color);
-/*background: url(https://images.unsplash.com/photo-1498050108023-c5249f4df085?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1172&q=80) no-repeat; */
-/* background: url("headshot-1-10-22(3).jpg") */
+/* background: url(https://images.unsplash.com/photo-1498050108023-c5249f4df085?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1172&q=80) no-repeat;  */
+background: url('assets/692A14AE-0BEB-46B1-AA12-20FF65EB2C15.jpg') no-repeat; 
+/* background: url("") */
 background-size: cover;
 background-position: right center ;
 }
@@ -120,6 +121,7 @@ background-position: right center ;
 }
 .home-text h2 {
     font-size: 37px;
+    font-weight: 600;
     margin: var(--m-1) 0;
     letter-spacing: var(--spacing);
 }
@@ -160,10 +162,10 @@ background-position: right center ;
   }
   .about-text h2 {
     font-size: var(--h2-font);
-    color: var(--primary);
+    color: black;
   }
   .about-text h1 {
-    font-size: var(--h1-font);
+    font-size: var(--h18-font);
     font-weight: 600;
   }
   .about-text p {
@@ -666,7 +668,7 @@ header .navbar{
  .skills-img {
      width: 280px;
  }
- .aboout-text {
+ .about-text {
      margin-top: 1rem;
  }   
 }
