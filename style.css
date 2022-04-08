@@ -28,14 +28,14 @@ body::-webkit-scrollbar-thumb{
 --h1-font: 2.2rem;
 --h2-font: 2.1rem;
 --p-font: 0.9rem;
---spacing: 1px;
+--spacing: 2px;
 /* Margins */
 --m-1: 0.4rem;
 --m-4: 2rem;
 }
 html {
-    background: rgb(166, 255, 0);
-    color: blue;
+    background: #030e20; 
+    color: darkgoldenrod;
 }
 /* Change location of main head text from top margain on the page */
 section {
@@ -51,7 +51,7 @@ header {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    background-color: lightblue;
+    background-color: lightyellow;
     padding: 18px 100px;
     box-shadow: 0 0.5rem 50rem rgba(0, 0, 0, 0.1);
 }
@@ -59,7 +59,7 @@ header {
     text-transform: uppercase;
     font-size: 1.4rem;
     font-weight: 600;
-    color: blue;
+    color:brown;
 }
 .navbar{
     display: flex;
@@ -67,11 +67,11 @@ header {
 .navbar a {
     font-size: 1rem;
     padding: 10px 20px;
-    color: blue;
+    color: brown;
     font-weight: 500;  
 }
 header .navbar a:hover {
-    background: darkolivegreen;
+    background: orange;
     color: white;
 }
 #menu-icon {
@@ -99,14 +99,14 @@ span{
 .home{
 position: relative;
 width: 100%;
-min-height: 100vh;
+min-height: 10vh;
 display: flex;
 align-items: center;
 background-color: var(--bg-color);
 /* background: url(https://images.unsplash.com/photo-1498050108023-c5249f4df085?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1172&q=80) no-repeat;  */
-background: url('assets/692A14AE-0BEB-46B1-AA12-20FF65EB2C15.jpg') no-repeat; 
+background: url('assets/692A14AE-0BEB-46B1-AA12-20FF65EB2C15 3.jpg') no-repeat; 
 /* background: url("") */
-background-size: cover;
+background-size: 50%;
 background-position: right center ;
 }
 .home-text {
@@ -127,7 +127,7 @@ background-position: right center ;
 }
 .home-text p {
     font-size: var(--p-font);
-    margin-bottom: var(--m-4);;
+    margin-bottom: 1rem;
     line-height: 22px;
     max-width: 87%;
 }
@@ -135,6 +135,7 @@ background-position: right center ;
     padding: 10px 22px;
     background: var(--primary);
     color: #fff;
+    margin-left: 10rem;
 }
 .btn:hover {
     background: var(--hover);
@@ -154,7 +155,7 @@ background-position: right center ;
 .about-img img {
     width: 100%;
     height: 100%;
-    object-fit: contain;
+    object-fit: none;
     object-position: center;
   }
   .about-text {
@@ -162,7 +163,7 @@ background-position: right center ;
   }
   .about-text h2 {
     font-size: var(--h2-font);
-    color: black;
+    color: darkgoldenrod;
   }
   .about-text h1 {
     font-size: var(--h18-font);
