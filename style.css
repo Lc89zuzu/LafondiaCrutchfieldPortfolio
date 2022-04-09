@@ -25,13 +25,13 @@ body::-webkit-scrollbar-thumb{
 --hover: #008170;
 
 /* Fonts */
---h1-font: 2.2rem;
---h2-font: 2.1rem;
+--h1-font: 2rem;
+--h2-font: 2rem;
 --p-font: 0.9rem;
 --spacing: 2px;
 /* Margins */
 --m-1: 0.4rem;
---m-4: 2rem;
+--m-4: 1.4rem;
 }
 html {
     background: #030e20; 
@@ -166,14 +166,14 @@ background-position: right center ;
     color: darkgoldenrod;
   }
   .about-text h1 {
-    font-size: var(--h18-font);
+    font-size: var(--h1-font);
     font-weight: 600;
   }
   .about-text p {
-    font-size: var(--p-font);
-    margin: 1rem 0 var(--m-4);
+    font-size: 100%;
+    margin: 1rem 0 var(--m-4); 
     text-align: justify;
-    font-weight: 300;
+    font-weight: 400;
   }
 
  /* *{
