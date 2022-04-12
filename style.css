@@ -25,13 +25,13 @@ body::-webkit-scrollbar-thumb{
 --hover: #008170;
 
 /* Fonts */
---h1-font: 2rem;
---h2-font: 2rem;
+--h1-font: 2.2rem;
+--h2-font: 2.2rem;
 --p-font: 0.9rem;
 --spacing: 2px;
 /* Margins */
 --m-1: 0.4rem;
---m-4: 1.4rem;
+--m-4: 2rem;
 }
 html {
     background: #030e20; 
@@ -107,7 +107,8 @@ background-color: var(--bg-color);
 background: url('assets/692A14AE-0BEB-46B1-AA12-20FF65EB2C15 3.jpg') no-repeat; 
 /* background: url("") */
 background-size: 50%;
-background-position: right center ;
+background-position: right center;
+border: 1rem solid darkgoldenrod;
 }
 .home-text {
     max-width: 500px;
@@ -127,7 +128,7 @@ background-position: right center ;
 }
 .home-text p {
     font-size: var(--p-font);
-    margin-bottom: 1rem;
+    margin: 1rem 0 var(--m-4);
     line-height: 22px;
     max-width: 87%;
 }
@@ -137,10 +138,12 @@ background-position: right center ;
     color: #fff;
     margin-left: 10rem;
 }
+
 .btn:hover {
     background: var(--hover);
 }
-/* .about {
+
+ /* .about { 
     width: 100%;
     min-height: 84vh;
     display: flex;
@@ -171,10 +174,11 @@ background-position: right center ;
   }
   .about-text p {
     font-size: 100%;
-    margin: 1rem 0 var(--m-4); 
+    margin: 1rem 0 var(--m-1);  
     text-align: justify;
     font-weight: 400;
-  }
+}
+  
 
  /* *{
 	margin: 70;
@@ -312,8 +316,8 @@ hr {
     font-family: monospace;
     transform-style: preserve-3d;
     transition: all 2s ease-in-out;
-    left: 45vw;
-    bottom: 25vw
+    left: 50vw;
+    bottom: 19vw;
 }
 .card:hover{
     transform: rotateY(180deg)
@@ -377,7 +381,7 @@ ul li{
 .skills{
     width: 100%;
     min-height: 100vh;
-    margin-top: 210px;
+    margin-top: 100px;
 
 }
 .heading{
@@ -398,7 +402,7 @@ ul li{
 .skills-img{
     width: 500px;
     height: 400px;
-    margin-top: 7.6rem;
+    margin-top: .6rem;
 }
 .skills-img img{
     height: 100%;
@@ -450,13 +454,13 @@ max-width: 500px;
     border-radius: 10px;
 }
 .html-bar {
-    width: 94%;
+    width: 92%;
 }
 .css-bar {
-    width: 84%;
+    width: 68%;
 }
 .js-bar {
-    width: 65%;
+    width: 66%;
 }
 .portfolio-content{
    display: flex;
@@ -492,7 +496,7 @@ max-width: 500px;
 .p-box h2 {
    font-size: var(--h2-font);
    font-weight: 600;
-    margin: 10px 0;
+   margin: 10px 0;
 }
 .p-box p {
     font-size: var(--p-font);
