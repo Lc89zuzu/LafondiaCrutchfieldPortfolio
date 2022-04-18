@@ -108,7 +108,7 @@ background: url('assets/692A14AE-0BEB-46B1-AA12-20FF65EB2C15 3.jpg') no-repeat;
 /* background: url("") */
 background-size: 50%;
 background-position: right center;
-border: 1rem solid darkgoldenrod;
+border-bottom:  1rem solid darkgoldenrod;
 }
 .home-text {
     max-width: 500px;
@@ -128,7 +128,7 @@ border: 1rem solid darkgoldenrod;
 }
 .home-text p {
     font-size: var(--p-font);
-    margin: 1rem 0 var(--m-4);
+    margin-bottom: 1rem;
     line-height: 22px;
     max-width: 87%;
 }
@@ -138,12 +138,10 @@ border: 1rem solid darkgoldenrod;
     color: #fff;
     margin-left: 10rem;
 }
-
 .btn:hover {
     background: var(--hover);
 }
-
- /* .about { 
+/* .about {
     width: 100%;
     min-height: 84vh;
     display: flex;
@@ -174,11 +172,9 @@ border: 1rem solid darkgoldenrod;
   }
   .about-text p {
     font-size: 100%;
-    margin: 1rem 0 var(--m-1);  
+    margin: 1rem 0 var(--m-4); 
     text-align: justify;
-    font-weight: 400;
-}
-  
+  }
 
  /* *{
 	margin: 70;
@@ -300,14 +296,14 @@ hr {
 	line-height: 30px;
 	text-align: center;
 	margin: 0 auto;
-}  */ */
-*{
+}  */ 
+  *{  
     -webkit-box-sizing: border-box;
      -moz-box-sizing: border-box;
     box-sizing: border-box; 
     }
 .card{
-    background-color: #EEE ; 
+    background-color: lightyellow; 
     box-shadow: 2px 2px;
     width: 300px;
     height: 400px;
@@ -316,8 +312,8 @@ hr {
     font-family: monospace;
     transform-style: preserve-3d;
     transition: all 2s ease-in-out;
-    left: 50vw;
-    bottom: 19vw;
+    left: 55vw;
+    bottom: 27vw;
 }
 .card:hover{
     transform: rotateY(180deg)
@@ -335,13 +331,13 @@ hr {
 }
 
 header img{
-    width: 80px;
-    height: 80px;
-    border-radius: 100%;
-    margin: 10px 0px 20px 0px;
+    width: 800px;
+    height: 221px;
+    border-radius: 2%;
+    margin: 400px 0px 100px -95px;
 }
 .front h2{
-    margin-top: 150px;
+    margin-top: 330px;
 }
 .front p{
     font-family: serif;
@@ -381,7 +377,8 @@ ul li{
 .skills{
     width: 100%;
     min-height: 100vh;
-    margin-top: 100px;
+    margin-top: 210px;
+    border-bottom: 1rem solid darkgoldenrod;
 
 }
 .heading{
@@ -409,6 +406,7 @@ ul li{
     width: 100%;
     object-fit: contain;
     object-position: center;
+    border:  4mm ridge red
 }
 .skills-bars{
 display: flex;
@@ -454,19 +452,20 @@ max-width: 500px;
     border-radius: 10px;
 }
 .html-bar {
-    width: 92%;
+    width: 94%;
 }
 .css-bar {
-    width: 68%;
+    width: 84%;
 }
 .js-bar {
-    width: 66%;
+    width: 65%;
 }
 .portfolio-content{
    display: flex;
    align-items: center;
    justify-content: center;
    flex-wrap: wrap;
+   border-bottom: 1rem solid darkgoldenrod;
 }
 .p-box {
    display: flex;
@@ -496,7 +495,7 @@ max-width: 500px;
 .p-box h2 {
    font-size: var(--h2-font);
    font-weight: 600;
-   margin: 10px 0;
+    margin: 10px 0;
 }
 .p-box p {
     font-size: var(--p-font);
