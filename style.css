@@ -22,7 +22,7 @@ body::-webkit-scrollbar-thumb{
 /* Colors */
 --bg-color: lightyellow;
 --primary: red;
---hover: #008170;
+--hover: #928b48;
 
 /* Fonts */
 --h1-font: 2.2rem;
@@ -34,12 +34,12 @@ body::-webkit-scrollbar-thumb{
 --m-4: 2rem;
 }
 html {
-    background: #030e20; 
+    background: #030e20;  
     color: darkgoldenrod;
 }
 /* Change location of main head text from top margain on the page */
 section {
-    padding: 50px 100px;
+    padding: 30px 80px;
 }
 header {
     position: fixed;
@@ -458,6 +458,7 @@ max-width: 500px;
 .js-bar {
     width: 65%;
 }
+
 .portfolio-content{
    display: flex;
    align-items: center;
@@ -614,7 +615,7 @@ section {
       flex-direction: column;  
     }
 }   
-@media (max-width: 600px){  
+@media (max-width: 768px){  
     #menu-icon { 
         display: initial;
         color: #222435;
@@ -642,7 +643,7 @@ header .navbar{
      border-left: 4px solid #222435; 
  } 
  .home{
-     background: #fff;
+     background:#030e20;
      justify-content: center;
  }
  .home-text {
@@ -674,8 +675,28 @@ header .navbar{
      margin-top: 1rem;
  }   
 }
+/* @media screen and (max-width: 480px){
+    .home {
+        display: flex;
+        background: url('assets/692A14AE-0BEB-46B1-AA12-20FF65EB2C15 3.jpg') no-repeat;
+        background-size: 100vw 100vh;
+    }
+}
 
 
+@media screen and (max-width: 480px){
+    .contact-content {
+        flex-direction: column;
+    }
+    .skills {
+        display: flex;
+        flex-direction: column;
+        margin-top: 10vh;
+    }
+    header * {
+        font-size: 5vw;
+    }
+} */
 
 
 
