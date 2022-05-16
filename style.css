@@ -175,7 +175,7 @@ border-bottom:  1rem solid darkgoldenrod;
     text-align: justify;
   }
   
-  body {
+  /* body {
 	margin: 0;
 	overflow: hidden;
 } 
@@ -197,7 +197,7 @@ canvas {
 	width: 100%; 
 	text-align: center;
 	pointer-events: none;
-}
+} */
 
  /* *{
 	margin: 70;
