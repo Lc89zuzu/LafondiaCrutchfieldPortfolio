@@ -175,6 +175,30 @@ border-bottom:  1rem solid darkgoldenrod;
     text-align: justify;
   }
   
+  body {
+	margin: 0;
+	overflow: hidden;
+} 
+
+canvas {
+    background-color:#030e20 ;
+    background-repeat: 45%;
+    background-position: right;
+    
+}
+ 
+#instructions {
+    
+	position: relative;
+	color: white;
+	bottom: 0;
+	padding-bottom: 6px;
+	font-family: sans-serif;
+    font-size: 20px;
+	width: 100%; 
+	text-align: center;
+	pointer-events: none;
+}
 
  /* *{
 	margin: 70;
